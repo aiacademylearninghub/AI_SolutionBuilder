@@ -2,8 +2,51 @@
   border-top: 1px solid grey;
   height: 35%;
   width: 50vw;
+  background: linear-gradient(135deg, #f0f4ff 0%, #e0f7fa 100%);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+  transition: background 0.6s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.4s;
 }
 
 #mermaid > svg {
   max-height: 50vh;
+}
+
+.container-without-code-editor {
+  background: linear-gradient(120deg, #e0eafc 0%, #cfdef3 100%);
+  min-height: 100vh;
+  min-width: 100vw;
+  transition: background 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fadeInBg 1.2s;
+}
+
+.container {
+  background: linear-gradient(120deg, #f8ffae 0%, #43c6ac 100%);
+  min-height: 100vh;
+  min-width: 100vw;
+  transition: background 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  animation: fadeInBg 1.2s;
+}
+
+@keyframes fadeInBg {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.glow-animate {
+  animation: glowPulse 1.5s infinite alternate;
+  box-shadow: 0 0 8px 2px #b388ff;
+}
+
+@keyframes glowPulse {
+  from {
+    box-shadow: 0 0 8px 2px #b388ff;
+  }
+  to {
+    box-shadow: 0 0 24px 8px #7c4dff;
+  }
 }
