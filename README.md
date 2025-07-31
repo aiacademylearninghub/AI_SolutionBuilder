@@ -1,4 +1,4 @@
-# Sudeep Solution Builder 👷
+# Solution Builder 👷
 Solution Builder is a tool designed to help developers frame solutions to problem statements by answering a series of questions. Try it out [here](https://solutionbuilder.onrender.com/).
 
 > Note: The Solution Builder is currently deployed in free tier, so it may take some time to load initially (Approx 1 minute).
